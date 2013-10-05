@@ -4,9 +4,9 @@ require "chromedriver/helper/version"
 
 Gem::Specification.new do |s|
   s.name        = "chromedriver-helper"
-  s.version     = Chromedriver::Helper::VERSION
-  s.authors     = ["Mike Dalessio"]
-  s.email       = ["mike@csa.net"]
+  s.version     = "0.0.6"
+  s.authors     = ["Mike Dalessio", "Sergey Demyanov"]
+  s.email       = ["mike@csa.net", "s.demyanov@gmail.com"]
   s.homepage    = ""
   s.summary     = "Easy installation and use of chromedriver, the Chromium project's selenium webdriver adapter."
   s.description = "Easy installation and use of chromedriver, the Chromium project's selenium webdriver adapter."
@@ -18,4 +18,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rspec"
   s.add_runtime_dependency "nokogiri"
+  s.add_runtime_dependency "rest-client"
+  s.add_runtime_dependency "xml-simple"
 end
